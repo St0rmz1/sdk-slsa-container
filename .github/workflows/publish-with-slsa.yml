@@ -93,9 +93,8 @@ jobs:
 
   package-and-publish:
     runs-on: 'ubuntu-22.04'
-    outputs:
+    # outputs:
       # image_digest_apko: ${{ steps.build-push-action.outputs.digest }}
-      test-output1: ${{ steps.build-push-action.outputs.digest }}
     needs:
       - get-tags
    #   - make-tests
